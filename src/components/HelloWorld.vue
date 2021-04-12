@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <p>组件Hello</p>
     <h1>{{ msg }}</h1>
     <router-link :to="'about'">go to about页</router-link>
   </div>
@@ -29,5 +30,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.hello{
+  background: pink;
 }
 </style>

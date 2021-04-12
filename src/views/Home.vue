@@ -4,7 +4,8 @@
       alt="Vue logo"
       src="../assets/logo.png"
     >
-    <HelloWorld :msg="count" @click="incrementStep()"/>
+    <p>{{$store.state.count}}</p>
+    <HelloWorld :msg="count" />
   </div>
 </template>
 
@@ -24,10 +25,13 @@ export default {
   },
   created() {
     this.incrementStep();
+    this.checkCookie()
   },
   methods: {
     //在这里引入 action 里的方法，使用方法和 methods 里的其他方法一样
-    ...mapActions(["incrementStep"])
+    ...mapActions(["incrementStep"]),
+    checkCookie(){}
+    
   }
 };
 </script>
