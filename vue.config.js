@@ -31,7 +31,7 @@ module.exports = {
   // 打包时不生成.map文件
   productionSourceMap: false,
   // 输出文件目录
-  outputDir: 'maybe',
+  outputDir: 'dist',
   // webpack-dev-server 相关配置
   devServer: {
     // 设置主机地址
